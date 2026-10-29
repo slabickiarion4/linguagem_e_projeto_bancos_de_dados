@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro JavaScript</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Primeiro JavaScript</h1>
+      <p>HTML + CSS + JavaScript trabalhando juntos.</p>
+    </header>
+
+    <main>
+      <section class="card card-busca">
+        <h2>Pesquisar raça</h2>
+        <form id="formPesquisaRaca">
+          <label for="pesquisaRaca">Digite o nome de uma raça:</label>
+          <div class="campo-pesquisa">
+            <input
+              type="search"
+              id="pesquisaRaca"
+              placeholder="Ex.: Labrador"
+              autocomplete="off"
+            />
+            <button type="submit">Pesquisar</button>
+          </div>
+        </form>
+        <div id="resultadosRaca" aria-live="polite">
+          <p>Pesquise uma raça para ver suas informações.</p>
+        </div>
+      </section>
+
+      <section class="card card-cachorro">
+        <h2>Curiosidades sobre cachorros</h2>
+        <img
+          id="fotoCachorro"
+          src="https://dogapi.dog/api/v2/breeds/image"
+          alt="Um cachorro"
+        />
+        <button id="btnNovaFoto" type="button">Ver outra foto</button>
+        <button id="btnCuriosidade" type="button">Ver curiosidade</button>
+        <p id="curiosidade" aria-live="polite">
+          Clique no botão para descobrir uma curiosidade.
+        </p>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
